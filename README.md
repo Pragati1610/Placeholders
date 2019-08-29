@@ -16,9 +16,10 @@ Status: Not Done
 
 # Laser Tag
 
-Status: Not Done
+Status: Done for now. (Has to be updated after design finalizes)
 
 # Riddler
 
-Status: Not Done
+Status: Done for now. (Has to be updated after design finalizes)
+
 
