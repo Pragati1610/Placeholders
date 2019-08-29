@@ -1,0 +1,11 @@
+.body{
+    background-color:#0d242c;
+    font-family: 'DejaVu Sans Mono';
+    color: white;
+}
+.image{
+    text-align: center;
+}
+.info{
+    font-size:35px;
+    }
