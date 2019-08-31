@@ -4,7 +4,10 @@
     /* background-size:100%; */
     overflow-x: hidden;
     background: #ffeb00;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+p{
+    padding: 10px;
 }
 .logo{
     margin-top:2%;
@@ -46,6 +49,7 @@ a{
 b{
     background: white;
     padding: 4px;
+    font-size:17px;
 }
 .bottom-left{
     width:18%;
@@ -84,6 +88,8 @@ h5{
     word-spacing: 4px;
     padding-left:2%;
     padding-right:3%;
+    text-align:center;
+    margin-top: 30px;
 
 }
 .dots{
@@ -92,33 +98,26 @@ h5{
     top:50px;
     width:65px;
 }
-#click-1{
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-    height:25%;
-    width:65%;  
-    /* padding:%; */
+#myCarousel{
+    height:70%;
 }
-#click-2{
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-    height: 25%;
-    width: 65%;
-    margin-top:2%;
-}
-#click-3{
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-    height:25%;
-    width: 65%;
-}
-#click-4{
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-    height:25%;
-    width: 65%;
-}
+/* 
+.container{
+    padding-left: 0;
+    padding-right: 0;
+} */
+/* .container-fluid{
+    padding-left: 0 px;
+    padding-right: 0 px;
+} */
+
+/* .container{ */
+    /* padding-left: 0; */
+    /* padding-right: 0; */
+/* } */
+
+/* .click-1,
+.click-2,
+.click-3{
+    height:100%;
+} */
