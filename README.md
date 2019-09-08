@@ -12,7 +12,7 @@ Status: Not Done
 
 # CTF
 
-Status: Not Done
+Status: Coming SOon Screen Added. (Has to Updated Soon)
 
 # Laser Tag
 
