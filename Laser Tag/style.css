@@ -1,14 +1,21 @@
-.lt-logo{
-    text-align: center;
+.lt-logo {
+  text-align: center;
 }
 
-.bg{
-    background-color:#210909;    
+.bg {
+  background-color: #210909;
 }
 
-.desc{
-    margin: 100px;
-    color:#B8B8B8;
-    font-size: 40pt;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+.desc {
+  margin: 100px;
+  color: #b8b8b8;
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.center {
+  padding-top: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
