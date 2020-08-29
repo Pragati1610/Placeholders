@@ -2,24 +2,22 @@
 
 Placeholder webpages for all CSI Websites that aren't deployed currently.
 
-# CCS
+## CCS
 
-Status: Not Done
+Status: Completed.
 
-# Clickbait
+## Clickbait
 
-Status: Not Done
+Status: Completed.
 
-# CTF
+## CTF
 
-Status: Coming SOon Screen Added. (Has to Updated Soon)
+Status: Completed.
 
-# Laser Tag
+## Laser Tag
 
-Status: Done for now. (Has to be updated after design finalizes)
+Status: Completed.
 
-# Riddler
+## Riddler
 
-Status: Done for now. (Has to be updated after design finalizes)
-
-
+Status: Completed.
