@@ -1,5 +1,16 @@
+@font-face{
+	font-family: 'hacked';
+	src: url('../assets/HACKED.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: 'pixel';
+	src: url('../assets/PixelOperator-Bold.ttf') format('truetype');
+}
+
 body{
-	font: 15px/1.5 Roboto, Arial, sans-serif;
+	font-family: 'pixel';
+	font: 15px/1.5;
 	background-image: url(../images/background.png);
 	color: #ffffff;
 	height: 100%;
@@ -11,15 +22,13 @@ body{
 
 p{
 	font-size: 10px;
+	margin: 0;
+	text-align: center;
 }
 
-/* global */
-
-.container{
-	width: 95%;
-	margin-left: auto;
-	color: white;
-
+.head-codegolf{
+	font-size: 200px;
+	font-family: 'hacked';
 }
 
 /* Header */
@@ -46,6 +55,7 @@ header li{
 
 header #codegolf{
 	float: left;
+	font-family: 'hacked';
 }
 
 header #codegolf h1{
@@ -58,16 +68,12 @@ header nav{
 	margin-top: -10px;
 }
 
-.enter{
-	min-height: 100%;
+.container1{
+	width: 95%;
+	margin: auto;
 }
 
-.main{
-	overflow: auto;
-	padding-bottom: 100px;
-}
-
-/* containers */
+/* section */
 
 section{
 	margin: 0px;
@@ -80,20 +86,56 @@ section .container{
 	text-align: center;
 }
 
+/* container-classes */
+
+.container{
+	width: 100%;
+	color: white;
+	overflow: hidden;
+}
+
+/* images */
+
+.bluepart{
+	height: 600px;
+}
+
+
+/* iframe */
+
+iframe{
+	position: 
+}
+
+.youtube{
+	margin: 20px;
+	align-items: center;
+}
+
+
 #bluepart{
 	max-width: 100%;
 	max-height: 5%;
 	margin-left: 0;
 }
 
+.footer-sec .links .icon{
+
+}
+
 /* Footer */
-/*
-footer{
+
+.footer{
 	position: relative;
+	bottom: 0;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
 	margin-bottom: 0px;
-	background: #ffffff;
+	/*background: #ffffff;*/
 	height: 200px;
-	margin-top: -100px;
 	clear: both;
 }
-*/
+
