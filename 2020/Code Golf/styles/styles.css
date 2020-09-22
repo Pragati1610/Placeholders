@@ -7,7 +7,7 @@
 	font-family: 'pixel';
 	src: url('../assets/PixelOperator-Bold.ttf') format('truetype');
 }
-
+/*
 @keyframes rotation {
   from {
     transform: rotate(0deg);
@@ -15,7 +15,7 @@
   to {
     transform: rotate(359deg);
   }
-}
+}*/
 
 *{
 	padding: 0;
@@ -25,7 +25,6 @@
 
 body{
 	font-family: 'pixel';
-	/*font: 15px/1.5;*/
 	line-height: 1.5;
 	background-image: url(../images/background.png);
 	background-size: cover;
@@ -36,6 +35,8 @@ body{
 
 html{
 	font-size: 62.5%; /* 10px */
+	padding: 0;
+	margin: 0;
 }
 
 /* Header */
@@ -49,7 +50,7 @@ header{
 	background-color: #000000;
 	color: #ffffff;
 	padding-top: 1rem;
-	min-height: 4rem;
+	min-height: 40px;
 }
 
 header a{
@@ -75,7 +76,7 @@ header #codegolf{
 header #codegolf h1{
 	margin: 0;
 	padding: 0;
-	font-size: 3rem;
+	font-size: 30px;
 }
 
 header nav{
@@ -99,11 +100,14 @@ section .container{
 /* p1 */
 
 .head-codegolf{
-	font-size: 24rem;
+	font-size: 21rem;
 	font-family: 'hacked';
-	padding-bottom: 0px;
-	margin-bottom: -3.5rem; 
+	padding-bottom: 0px;	
+	margin-bottom: -4rem; 
 	margin-top: -7rem; 
+	width: 25rem;
+	margin-left: 50%;
+	transform: translateX(-50%); 	
 }
 
 	/* container-classes */
@@ -116,21 +120,33 @@ section .container{
 
 	/* images */
 
-.bluepart{
-	height: 60rem;
+.container3{
 	width: 100%;
-	position: absolute;
-	top: 48%;
+	color: white;
+	position: relative;
+}
+
+.outer-blue{
+	position: relative;
+}
+
+.bluepart{
+	height: 35rem;
+	width: 100%;
+	margin-top: 7rem;
 }
 
 .redpart{
-	height: 60rem;
+	height: 50rem;
 }
 
 .skull{
 	height: auto;
-	width: 50rem;
+	width: 40rem;
 	margin: -6rem auto;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .rotate{
@@ -150,20 +166,19 @@ p{
 }
 
 #Head{
-	font-size: 20rem;
+	font-size: 16rem;
 	font-family: 'hacked';
 	position: absolute;
-
-	top: 55%;
+	top: 29%;
 	left: 50%;
 	transform: translateX(-50%);
 }
 
 #CS{
-	font-size: 8rem;
+	font-size: 7rem;
 	font-family: 'hacked';
 	position: absolute;
-	top: 90%;
+	top: 70%;
 	left: 50%;
 	transform: translateX(-50%);
 	color: rgb(13,203,255);
@@ -174,9 +189,10 @@ p{
 /* iframe */
 
 .youtube{
-	margin: 6rem auto 0rem auto;
+	/*margin: 0rem auto 0rem auto;*/
+	margin-top: 0rem;
 	align-items: center;
-	padding-top: 30rem; 
+	/*width: 100%;*/
 }
 
 
@@ -195,6 +211,7 @@ p{
 
 .text{
 	margin-bottom: 6rem;
+	z-index: 1;
 }
 
 /* p4 */
@@ -209,6 +226,7 @@ p{
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	height: 50rem;
 	/*padding: -10rem 0;*/
 }
 
@@ -216,10 +234,11 @@ p{
 	width: 40%;
 	height: auto;
 	position: absolute;
-	bottom: 0;
+	bottom: -5rem;
 	left: 0;
 	padding: 0;
 	margin: 0;
+	z-index: -1;
 	/*position: absolute;
 	left: 0;
 	bottom: 500px;*/
@@ -229,8 +248,10 @@ p{
 
 .footer{
 	position: relative;
-	bottom: 0;
+	bottom: 0rem;
 	background: #000000;
+	padding: 0;
+	margin: 0;
 	padding-top: 2rem;
 }
 
@@ -251,10 +272,10 @@ p{
 }
 
 .links{
-	position: absolute;
+	/*position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	margin-top: 10rem;
+	margin-top: 10rem;*/
 }
 
 .fab{
@@ -265,27 +286,27 @@ p{
 .branding{
 	display: flex;
 	flex-direction: column; 
-	position: absolute;
-	right: 2rem;
-	margin-top: 3rem;
-	/*position: relative;*/
+	justify-content: space-between;
+	height: 10rem;
+	margin-right: 4rem;
+	align-items: flex-end;
 }
 
 .gravitas{
 	width: 20rem;
 	height: auto;
-	margin-bottom: 2rem;
-	position: absolute;
-	right: 0;
-	top: 3rem;
+	margin-bottom: 0rem;
+	/*position: absolute;*/
+	/*right: 0;*/
+	/*top: -5rem;*/
 }
 
 .CSI{
 	width: 21rem;
 	height: auto;
-	position: absolute;
-	right: 0;
-	top: 7rem;
+	/*position: absolute;*/
+	/*right: 0;*/
+	/*top: 0rem;*/
 	/*bottom: 0;*/
 }
 
@@ -300,27 +321,72 @@ p{
 	height: 1.25rem;
 	width: auto;
 	padding-bottom: 0px;
-	margin: 2rem auto;
+	margin: 0 auto;
 }
 
-
-@media only screen and (max-width: 600px) {
-
+iframe{
+	 width:100%; 
+	 height:75rem;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
+.responsive{
+	/*display: hidden;*/
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-	/*html{
-		font-size: 50%;
-	}*/
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px, max-width: 1200px) {
+@media only screen and (max-width: 992px) {
+	html{
+	font-size: 46.875%; /* 7.5px */
+	padding: 0;
+	margin: 0;
+	}
+	iframe{
+		width: 100%;
+		height: 50rem;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+	html{
+	font-size: 31.25%; /* 5px */
+	padding: 0;
+	margin: 0;
+	}
+	.footer-content{
+	margin-left: 1rem;
+	margin-right: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 100px;
+	align-items: center;
+	}
+	iframe{
+		width: 100%;
+		height: 50rem;
+	}
+}
+
+.topnav{
+	display: none;
+}
+
+.bluetop{
+	width: 200%;
 
 }
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 417px) {
+
+}
+
