@@ -12,17 +12,18 @@
 </head>
 <body>
 
-	<div class="topnav">
-		
-		<nav id="myLinks">
-			<ul>
-				<li><a href="#p2">teaser video</a></li>
-				<li><a href="#p4">about</a></li>
-			</ul>
-		</nav>
-	    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-	    <i class="fa fa-bars"></i>
-	    </a>
+	<div class="hidden-nav">
+		<img class="bluetop" src="./images/bluetop.png">
+
+		<div class="topnav" id="myTopnav">
+			  <a href="">CODEGOLF</a>
+			  <a href="#p2">teaser video</a>
+			  <a href="#p4">about</a>
+			  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			    <i class="fa fa-bars"></i>
+			  </a>
+		</div>
+
 	</div>
 
 	<header>
@@ -41,7 +42,7 @@
 
 	<section id="p1">
 		<div class="container3">
-			<p class="head-codegolf">CG</p>
+			<p class="head-codegolf">C<span class="cg-span">G</span></p>
 			<img class="skull rotate" src="./images/skull.png">
 			<div class="outer-blue">
 				<img class="bluepart" src="./images/bluepart2.png">
@@ -82,6 +83,7 @@
 					<h1 style="padding-bottom: 1rem;">CONTACT US</h1>
 					<h2>askcsivit@gmail.com</h2>
 				</div>
+				<!-- <div style="width: 5px"></div> -->
 				<div class="links">
 					<a href=""><i class="fab fa-facebook-f fa-3x"></i></a>
 					<a href=""><i class="fab fa-instagram fa-3x"></i></a>
@@ -93,9 +95,9 @@
 				</div>
 			</div>
 			<div class="footer-bottom">
-				<img class="end" src="./images/madewithbycsi.png">			
+				<img class="end" src="./images/madewithbycsi.png">		
 			</div>
 	</div>
-	
+
 </body>
 </html>

@@ -7,16 +7,16 @@
 	font-family: 'pixel';
 	src: url('../assets/PixelOperator-Bold.ttf') format('truetype');
 }
-/*
-@keyframes rotation {
+
+/*@keyframes rotation {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(359deg);
   }
-}*/
-
+}
+*/
 *{
 	padding: 0;
 	margin: 0;
@@ -100,14 +100,30 @@ section .container{
 /* p1 */
 
 .head-codegolf{
-	font-size: 21rem;
+	font-size: 17rem;
 	font-family: 'hacked';
-	padding-bottom: 0px;	
+	padding-bottom: 1.7rem;	
+	padding-top: 1.5rem;
 	margin-bottom: -4rem; 
 	margin-top: -7rem; 
 	width: 25rem;
 	margin-left: 50%;
 	transform: translateX(-50%); 	
+}
+
+.cg-span{
+	display: inline-block;
+	-moz-transform: scale(1, -1);
+	-webkit-transform: scale(1, -1);
+	-o-transform: scale(1, -1);
+	-ms-transform: scale(1, -1);
+	transform: scale(1, -1);
+
+	-moz-transform: scale(-1, 1);
+	-webkit-transform: scale(-1, 1);
+	-o-transform: scale(-1, 1);
+	-ms-transform: scale(-1, 1);
+	transform: scale(-1, 1);
 }
 
 	/* container-classes */
@@ -175,7 +191,7 @@ p{
 }
 
 #CS{
-	font-size: 7rem;
+	font-size: 8rem;
 	font-family: 'hacked';
 	position: absolute;
 	top: 70%;
@@ -266,9 +282,10 @@ p{
 }
 
 .contact{
-	position: absolute;
-	top: 60%;
-	transform: translateY(-50%);
+	/*position: absolute;*/
+	/*top: 60%;*/
+	/*transform: translateY(-50%);*/
+	margin-top: 2.5%;
 }
 
 .links{
@@ -276,6 +293,8 @@ p{
 	left: 50%;
 	transform: translateX(-50%);
 	margin-top: 10rem;*/
+	align-items: center;
+	margin-left: 8rem;
 }
 
 .fab{
@@ -288,7 +307,7 @@ p{
 	flex-direction: column; 
 	justify-content: space-between;
 	height: 10rem;
-	margin-right: 4rem;
+	/*margin-right: 4rem;*/
 	align-items: flex-end;
 }
 
@@ -329,14 +348,6 @@ iframe{
 	 height:75rem;
 }
 
-.responsive{
-	/*display: hidden;*/
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1200px) {
-
-}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
@@ -358,13 +369,14 @@ iframe{
 	padding: 0;
 	margin: 0;
 	}
+	
 	.footer-content{
 	margin-left: 1rem;
 	margin-right: 1rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	height: 100px;
+	height: 250px;
 	align-items: center;
 	}
 	iframe{
@@ -373,20 +385,137 @@ iframe{
 	}
 }
 
-.topnav{
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 600px) {
+	html{
+	font-size: 25%; /* 5px */
+	padding: 0;
+	margin: 0;
+	}
+	
+	.footer-content{
+	margin-left: 1rem;
+	margin-right: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 250px;
+	align-items: center;
+	}
+	iframe{
+		width: 100%;
+		height: 50rem;
+	}
+}
+
+
+@media only screen and (max-width: 530px) {
+	html{
+	font-size: 20%; /* 5px */
+	padding: 0;
+	margin: 0;
+	}
+	
+	.footer-content{
+	margin-left: 1rem;
+	margin-right: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 150px;
+	align-items: center;
+	}
+	iframe{
+		width: 100%;
+		height: 50rem;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	html{
+	font-size: 15%; /* 5px */
+	padding: 0;
+	margin: 0;
+	}
+	
+	.footer-content{
+	margin-left: 1rem;
+	margin-right: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 150px;
+	align-items: center;
+	}
+	iframe{
+		width: 100%;
+		height: 50rem;
+	}
+}
+
+
+.hidden-nav{
 	display: none;
 }
-
-.bluetop{
-	width: 200%;
-
-}
-
-
-
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 417px) {
 
+	#CS{
+		font-size: 5rem;
+	}
+
+	.text1{
+		width: 40%;
+		font-size: 15px;
+
+		} 
+	.text2 {
+		width: 45%;
+		font-size: 5px;
+	}
+
+	.footer-content{
+		margin-left: 1rem;
+		margin-right: 1rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 300px;
+		align-items: center;
+	}
+	.contact{
+		/*position: absolute;
+		top: 60%;*/
+		align-items: center;
+		text-align: center;
+		/*transform: translateY(-50%);*/
+		order: 2;
+	}
+
+	.branding{
+		display: flex;
+		flex-direction: column; 
+		justify-content: space-between;
+		height: 10rem;
+		/*margin-right: 4rem;*/
+		align-items: center;
+		margin-top: 7px;
+		order: 1;
+	}
+
+	.links{
+		order: 3;
+		margin-bottom: 7%;
+		align-content: center;
+		margin-right: 6%;
+	}
+
+	iframe{
+		 width:100%; 
+		 height:50rem;
+	}
+		
 }
+
 
