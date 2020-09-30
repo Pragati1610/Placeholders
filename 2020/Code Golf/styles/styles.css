@@ -51,6 +51,7 @@ header{
 	color: #ffffff;
 	padding-top: 1rem;
 	min-height: 40px;
+	z-index: 100;
 }
 
 header a{
@@ -100,12 +101,13 @@ section .container{
 /* p1 */
 
 .head-codegolf{
-	font-size: 17rem;
+	font-size: 18rem;
 	font-family: 'hacked';
-	padding-bottom: 1.7rem;	
-	padding-top: 1.5rem;
-	margin-bottom: -4rem; 
-	margin-top: -7rem; 
+	/*padding-bottom: 1.7rem;	*/
+	/*padding-top: 1.5rem;*/
+	padding: -5rem;
+	margin-bottom: 0rem; 
+	margin-top: -10rem; 
 	width: 25rem;
 	margin-left: 50%;
 	transform: translateX(-50%); 	
@@ -140,6 +142,7 @@ section .container{
 	width: 100%;
 	color: white;
 	position: relative;
+	margin-top: 100px;
 }
 
 .outer-blue{
@@ -449,5 +452,4 @@ iframe{
 	}
 		
 }
-
 
